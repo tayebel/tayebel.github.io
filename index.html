@@ -21,11 +21,10 @@
           <div class="top-text">
             <p class="text-title desktop">Tayeb EL Mehadji</p>
           </div>
-          <p class="text">My proficiency and background encompass a diverse range of skills and experiences <br> in the realm of
-            <span id="dynamic-words">
-              <span class="dynamic-word">Machine Learning</span>
-            </span>
-          </p>
+    
+          <span class="dynamic-word">Machine Learning</span>
+          
+          
          
         </div>
       </div>
@@ -253,7 +252,7 @@
     function updateDynamicWords() {
       var currentIndex = 0;
       setInterval(function() {
-        dynamicWords.innerHTML = '<span class="dynamic-word">' + words[currentIndex] + '</span>';
+        dynamicWords.innerHTML = 'My proficiency and background encompass a diverse range of skills and experiences<br>in the realm of <span class="dynamic-word">' + words[currentIndex] + '</span>';
         currentIndex = (currentIndex + 1) % words.length;
       }, 2000);
     }
