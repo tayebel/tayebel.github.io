@@ -250,7 +250,8 @@
     function updateDynamicWords() {
       var currentIndex = 0;
       setInterval(function() {
-        dynamicWords.innerHTML = 'My proficiency and background encompass a diverse range of skills and experiences in the realm of<span class="dynamic-word">' + words[currentIndex] + '</span>';
+        dynamicWords.innerHTML = 'My proficiency and background encompass a diverse range of skills and experiences <br> in the realm of <span class="dynamic-word">' + words[currentIndex] + '</span>';
+
         currentIndex = (currentIndex + 1) % words.length;
       }, 2000);
     }
