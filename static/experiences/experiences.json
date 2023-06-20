@@ -1,0 +1,90 @@
+{
+  "experiences": [
+    {
+      "name": "Reservoir simulation engineer",
+      "link": "Reservoir simulation engineer",
+      "location": "Remote",
+      "weight": 1,
+      "tags": [
+        "Freelancer/independent"
+      ],
+      "date": "Mar. 2023 – Present",
+      "short": "Developing black oil models using Eclipse data file and reporting the results using ResInsight software.",
+      "photos": [
+        "/static/experiences/image1.png"
+      ]
+    },
+    {
+      "name": "Data Analyst/Annotator",
+      "link": "Data Analyst/Annotator",
+      "location": "Remote, Enterprise Adobe",
+      "weight": 2,
+      "tags": [
+        "Freelancer/independent"
+      ],
+      "date": "Mar 01, 2022-Oct 31, 2022",
+      "short": "Pre-processing and annotation multiple English transcripts in order to make them usable for training a machine learning model (NLP).",
+      "photos": [
+        "/static/experiences/image2.png"
+      ]
+    },
+    {
+      "name": "Data Analyst/Annotator",
+      "link": "Data Analyst/Annotator",
+      "location": "Remote, Enterprise Adobe",
+      "weight": 2,
+      "tags": [
+        "Freelancer/independent"
+      ],
+      "date": "Mar 01, 2022-Oct 31, 2022",
+      "short": "Supervise three people to annotate the data and come up with a high quality to train the machine learning model.",
+      "photos": [
+        "/static/experiences/image3.png"
+      ]
+    },
+    {
+      "name": "Petroleum /Machine Learning engineer",
+      "link": "Petroleum /Machine Learning engineer",
+      "location": "Remote, Enterprise Adobe",
+      "weight": 2,
+      "tags": [
+        "Freelancer/independent"
+      ],
+      "date": "Mar 2022-April 2022",
+      "short": "✓ Pre-processing and visualization the data using python.  ✓ Created a python tool to calculate a parameter (MMP) in the Enhanced Oil Recovery (EOR) method using correlations.  ✓ Created a Machine Learning model (using Keras) to predict a key parameter (MMP) in the Enhanced Oil Recovery (EOR) method.",
+      "photos": [
+        "/static/experiences/image4.jpg"
+      
+      ]
+    },
+    {
+      "name": "Tranee/internship",
+      "link": "Tranee/internship",
+      "location": "Sonatrach-Ourhoud, Hassi Masoud, Algeria",
+      "weight": 2,
+      "tags": [
+        "Student"
+      ],
+      "date": "Dec. 2020-Jan 2020",
+      "short": " Training on well test operations.",
+      "photos": [
+        "/static/experiences/image5.jpg"
+       
+      ]
+    },
+    {
+      "name": "Tranee/internship",
+      "link": "Tranee/internship",
+      "location": "Sonatrach-Ourhoud, Hassi Masoud, Algeria",
+      "weight": 2,
+      "tags": [
+        "internship,petroleum,well test."
+      ],
+      "date": "Dec. 2020-Jan 2020",
+      "short": " Training on well test operations.",
+      "photos": [
+        "/static/experiences/image5.jpg"
+      ]
+    }
+  ]
+}
