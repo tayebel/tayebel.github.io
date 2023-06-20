@@ -10,6 +10,10 @@ body {
       }
 
       .text {
+        flex-grow: 1;
+        text-align: justify; /* Align the text to justify */
+        padding: 0 50px; /* Add padding to the start and ending of the text */
+        margin-right: 50px;
         font-size: 8px;
       }
       .dynamic-word {
