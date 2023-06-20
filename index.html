@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tayeb EL | Portfolio </title>
   <link type="text/css" rel="stylesheet" href="static/css/home.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -20,7 +21,8 @@
           <div class="top-text">
             <p class="text-title desktop">Tayeb EL Mehadji</p>
           </div>
-          <p class="text">
+          <p class="text">My proficiency and background encompass a diverse range of skills and experiences <br> in the realm of</p>
+          <p class="text-content">
             <span id="dynamic-words">
               <span class="dynamic-word">Machine Learning</span>
             </span>
@@ -234,6 +236,7 @@
           <img src="/static/experiences/cv.png" alt="CV Icon">
           CV
         </a>
+        <p>&copy; 2023 Tayeb EL Mehadji</p>
       </div>
     </div>
   </section>   
@@ -250,8 +253,7 @@
     function updateDynamicWords() {
       var currentIndex = 0;
       setInterval(function() {
-        dynamicWords.innerHTML = 'My proficiency and background encompass a diverse range of skills and experiences <br> in the realm of <span class="dynamic-word">' + words[currentIndex] + '</span>';
-
+        dynamicWords.innerHTML = '<span class="dynamic-word">' + words[currentIndex] + '</span>';
         currentIndex = (currentIndex + 1) % words.length;
       }, 2000);
     }
