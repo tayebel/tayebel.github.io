@@ -21,7 +21,7 @@
           <div class="top-text">
             <p class="text-title desktop">Tayeb EL Mehadji</p>
           </div>
-          <p class="text">My proficiency and background encompass a diverse range of skills and experiences <br> in the realm of</p>
+          <p class="text">My proficiency and background encompass a diverse range of skills and experiences</p>
           <p class="text-content">
             <span id="dynamic-words">
               <span class="dynamic-word">Machine Learning</span>
@@ -234,7 +234,7 @@
       <div class="cv-bar">
         <a href="/static/experiences/cv-tayeb.pdf" target="_blank">
           <img src="/static/experiences/cv.png" alt="CV Icon">
-          CV
+          Curriculum Vitae
         </a>
         <h5 class="rights">&copy; 2023 Tayeb EL Mehadji</h5>
         
@@ -254,7 +254,7 @@
     function updateDynamicWords() {
       var currentIndex = 0;
       setInterval(function() {
-        dynamicWords.innerHTML = '<span class="dynamic-word">' + words[currentIndex] + '</span>';
+        dynamicWords.innerHTML = '  in the realm of <span class="dynamic-word">' + words[currentIndex] + '</span>';
         currentIndex = (currentIndex + 1) % words.length;
       }, 2000);
     }
