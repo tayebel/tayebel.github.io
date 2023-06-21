@@ -240,8 +240,9 @@ body {
 
 .rights {
   font-size: 12px;
-  text-align: center; /* Center the text */
   white-space: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 
