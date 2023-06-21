@@ -241,8 +241,11 @@ body {
 
 .cv-bar img {
   margin-right: 10px; /* Adjust the margin as needed */
+  width: 40px; /* Set the desired width */
+  height: 40px;
 }
 
 .rights {
-  font-size: 10px;
+  font-size: 12px;
+ 
 }
