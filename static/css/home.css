@@ -224,17 +224,13 @@ body {
   padding: 20px;
 }
 
-.container-cv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 10vh;
-}
+
 
 .cv-bar img {
   text-align: center;
-  height: 60px;
-  width: 60px;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
 }
 
 .rights {
@@ -244,9 +240,3 @@ body {
   text-align: center;
 }
 
-@media (max-width: 500px) {
-  .rights {
-    text-align: center;
-    white-space: normal;
-  }
-}
