@@ -4,11 +4,7 @@ body {
 }
 
 
-@media (min-width: 576px) {
-  .line-break {
-    display: inline;
-  }
-}
+
 
 .container {
   display: flex;
@@ -223,7 +219,6 @@ body {
   margin-bottom: 10px;
 }
 
-
 #cv {
   background-color: #ffffff;
   padding: 20px;
@@ -231,23 +226,17 @@ body {
 
 .container-cv {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   min-height: 10vh;
 }
 
-.cv-bar {
-  display: flex;
-  align-items: center;
-}
-
-.cv-bar img {
-  align-items: center; /* Adjust the margin as needed */
-  width: 60px; /* Set the desired width */
-  height: 60px;
+.cv-bar{
+  text-align: center;
+  height: 50px;
+  width: 50px;
 }
 
 .rights {
   font-size: 12px;
-  align-items: center;
 }
