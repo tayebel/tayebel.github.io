@@ -255,3 +255,7 @@ body {
   align-items: center;
   min-height: 10vh;
 }
+
+.cv-bar{
+  font-size: 8px;
+}
