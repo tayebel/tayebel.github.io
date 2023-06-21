@@ -226,23 +226,24 @@ body {
 
 .container-cv {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 10vh;
 }
 
 .cv-bar img {
- 
   height: 45px;
   width: 45px;
+  margin-bottom: 10px; /* Add margin to separate the image and text */
 }
 
 .rights {
   font-size: 12px;
- 
+  text-align: center; /* Center the text */
   white-space: nowrap;
-
 }
+
 
 @media only screen and (max-device-width: 480px) {
   body { max-width: 100%; }
