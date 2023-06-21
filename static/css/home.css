@@ -221,6 +221,7 @@ body {
   margin-bottom: 10px;
 }
 
+
 #cv {
   background-color: #ffffff;
   padding: 20px;
@@ -228,11 +229,20 @@ body {
 
 .container-cv {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   min-height: 10vh;
 }
 
-.cv-bar{
-  text-align: center;
+.cv-bar {
+  display: flex;
+  align-items: center;
+}
+
+.cv-bar img {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.rights {
+  font-size: 10px;
 }
