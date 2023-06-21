@@ -2,7 +2,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: #a9b57d;
 }
- 
 
 @media (max-width: 576px) {
   .wrapper {
@@ -27,12 +26,11 @@ body {
     text-align: center;
   }
 }
-    
 
-.rights{
+.rights {
+  font-size: 10px;
+}
 
-      font-size: 10px;
-    }
 .container {
   display: flex;
   justify-content: center;
@@ -112,8 +110,6 @@ body {
   }
 }
 
-
-
 @keyframes arrowBounce {
   0% {
     transform: rotate(45deg) translateY(0);
@@ -144,8 +140,6 @@ body {
   margin-bottom: 20px;
 }
 
-
-
 #projects {
   background-color: #ffffff;
   padding: 20px;
@@ -156,6 +150,7 @@ body {
   font-size: 15px;
   margin-bottom: 20px;
 }
+
 #projects h2 {
   text-align: center;
   font-size: 28px;
@@ -184,9 +179,11 @@ body {
 .card-title {
   font-size: 19px; /* Adjust the font size as needed */
 }
- .card-date {
+
+.card-date {
   font-size: 14px; /* Adjust the font size as needed */
 }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -208,6 +205,7 @@ body {
 .card-body {
   padding: 20px;
 }
+
 /* CSS for the CV bar */
 
 .scroll-down-arrow {
@@ -250,10 +248,10 @@ body {
   background-color: #ffffff;
   padding: 20px;
 }
+
 .container-cv {
   display: flex;
-justify-content: center;
-align-items: center;
-min-height: 10vh;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
 }
-
