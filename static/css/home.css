@@ -240,12 +240,12 @@ body {
 }
 
 .cv-bar img {
-  margin-right: 10px; /* Adjust the margin as needed */
-  width: 40px; /* Set the desired width */
-  height: 40px;
+  align-items: center; /* Adjust the margin as needed */
+  width: 60px; /* Set the desired width */
+  height: 60px;
 }
 
 .rights {
   font-size: 12px;
- 
+  align-items: center;
 }
