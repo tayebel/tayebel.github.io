@@ -3,29 +3,6 @@ body {
   background-color: #a9b57d;
 }
 
-@media (max-width: 576px) {
-  .wrapper {
-    flex-direction: column;
-  }
-  
-  .text-container {
-    text-align: center;
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-  
-  .social-icons {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0;
-    margin-top: 20px;
-  }
-  
-  .middle-text {
-    text-align: center;
-  }
-}
 
 .rights {
   font-size: 10px;
