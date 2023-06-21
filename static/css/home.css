@@ -232,19 +232,23 @@ body {
   min-height: 10vh;
 }
 
+.cv-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .cv-bar img {
   height: 45px;
   width: 45px;
   margin-bottom: 10px;
-  justify-content: center;
-  align-items: center; /* Add margin to separate the image and text */
 }
 
 .rights {
   font-size: 12px;
   white-space: nowrap;
-  justify-content: center;
-  align-items: center;
+  text-align: center; /* Center the text */
 }
 
 
@@ -256,7 +260,9 @@ body {
     align-items: flex-end;
     margin-left: 20px;
   }
-  
+  .text{
+    font-size: 13px;
+  }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -266,7 +272,9 @@ body {
     align-items: flex-end;
     margin-left: 20px;
   }
-  
+  .text{
+    font-size: 13px;
+  }
  
 }
 
@@ -278,6 +286,8 @@ body {
     align-items: flex-end;
     margin-left: 20px;
   }
-  
+  .text{
+    font-size: 13px;
+  }
   
 }
