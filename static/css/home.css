@@ -4,8 +4,10 @@ body {
 }
 
 
-.rights {
-  font-size: 10px;
+@media (min-width: 576px) {
+  .line-break {
+    display: inline;
+  }
 }
 
 .container {
