@@ -245,3 +245,15 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-device-width: 480px) {
+  body { max-width: 100%; }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+ 
+}
+
+
+@media only screen and (min-resolution: 300dpi) {
+
+}
