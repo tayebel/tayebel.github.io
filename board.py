@@ -11,8 +11,6 @@ class dashboard(yt_analysis):
         try:
             self.data, self.username, self.video_total, self.subscriber, self.view = self.chan_stats()
             country_codes = [country.alpha_2 for country in pycountry.countries]
-
-            app = dash.Dash(__name__,assets_folder='assets')
            
             app.layout = html.Div(children=[
                 html.H1(children='Youtube channels analysis dashboard: '),
