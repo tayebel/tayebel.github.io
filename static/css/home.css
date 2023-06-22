@@ -73,11 +73,11 @@ body {
   animation: textFade 3s infinite;
 }
 
-.card-clickable {
+.card{
   cursor: pointer;
 }
 
-.card-clickable:hover {
+.card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
