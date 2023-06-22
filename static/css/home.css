@@ -73,6 +73,15 @@ body {
   animation: textFade 3s infinite;
 }
 
+.card-clickable {
+  cursor: pointer;
+}
+
+.card-clickable:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+
 @keyframes textFade {
   0% {
     opacity: 0;
@@ -391,3 +400,4 @@ body {
     opacity: 0;
   }
 }
+
