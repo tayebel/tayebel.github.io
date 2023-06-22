@@ -9,7 +9,10 @@ body {
   }
   
   header {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
   }
 
 .exp-title{
@@ -52,7 +55,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 8vh;
+    min-height: 5vh;
   }
   
   .cv-bar {
@@ -63,9 +66,9 @@ body {
   }
   
   .cv-bar img {
-    height: 45px;
-    width: 45px;
-    margin-bottom: 10px;
+    height: 40px;
+    width: 40px;
+    
   }
   
   .rights {
