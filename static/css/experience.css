@@ -50,30 +50,35 @@ body {
     text-decoration: none;
   }
   
-  footer {
-    text-align: center;
-    margin-top: 20px;
+  #cv {
+    background-color: #ffffff;
+    padding: 20px;
   }
-  .scroll-down-arrow {
+  
+  .container-cv {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 999;
+    min-height: 10vh;
   }
   
-  .arrow {
-    width: 30px;
-    height: 30px;
-    border-bottom: 2px solid #5acbf0;
-    border-right: 2px solid #5acbf0;
-    transform: rotate(45deg);
-    animation: arrowBounce 2s infinite;
+  .cv-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
-  .scroll-down-arrow.hidden {
-    opacity: 0;
+  .cv-bar img {
+    height: 45px;
+    width: 45px;
+    margin-bottom: 10px;
   }
+  
+  .rights {
+    font-size: 12px;
+    white-space: nowrap;
+    text-align: center; /* Center the text */
+  }
+  
