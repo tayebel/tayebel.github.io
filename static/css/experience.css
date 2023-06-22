@@ -83,8 +83,8 @@ body{
   }
   
   .home-bar:hover {
-    color: blue; /* Changes the color when the user hovers over the link */
-    text-decoration: underline; /* Adds underline when the user hovers over the link */
+    color: rgb(0, 0, 0); /* Changes the color when the user hovers over the link */
+    text-decoration: none; /* Adds underline when the user hovers over the link */
   }
   
   .home-bar:visited {
