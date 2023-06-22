@@ -44,5 +44,31 @@
     
     &copy; 2023 Your Name
   </footer>
+
+  <a class="scroll-down-arrow">
+    <span class="arrow"></span>
+  </a>
+
+  <script type="text/javascript">
+    // Hide the scroll-down arrow initially
+    $('.scroll-down-arrow').addClass('hidden');
+
+    // Function to check if the user has reached the end of the page
+    function checkScrollEnd() {
+      var windowHeight = $(window).height();
+      var documentHeight = $(document).height();
+      var scrollTop = $(window).scrollTop();
+      var scrollPosition = windowHeight + scrollTop;
+      
+      if (scrollPosition >= documentHeight) {
+        $('.scroll-down-arrow').addClass('hidden');
+      } else {
+        $('.scroll-down-arrow').removeClass('hidden');
+      }
+    }
+
+    // Bind the scroll event to check for scroll end
+    $(window).on('scroll', checkScrollEnd);
+  </script>
 </body>
 </html>
