@@ -5,25 +5,18 @@ body {
   img {
     display: block;
     margin: 0 auto;
-    max-width: 200px; /* Adjust the size as per your requirement */
+    width: 500px;
   }
   
   header {
     text-align: center;
   }
   
-  .container-cv {
-    text-align: center;
-  }
-  
-  /* Additional Styles (Optional) */
-  
-  h1 {
-    color: white; /* Change the color as desired */
-  }
-  
   section {
-    text-align: center;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
     color: white; /* Change the color as desired */
   }
   
@@ -34,6 +27,16 @@ body {
   
   li {
     margin-bottom: 20px;
+  }
+  
+  /* Additional Styles (Optional) */
+  
+  h1 {
+    color: white; /* Change the color as desired */
+  }
+  
+  .container-cv {
+    text-align: center;
   }
   
   /* Adjust other styles as per your requirements */
