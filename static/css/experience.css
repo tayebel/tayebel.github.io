@@ -66,6 +66,7 @@ body{
   .cv-bar img {
     height: 40px;
     width: 40px;
+    cursor: pointer;
   }
   
   .rights {
@@ -79,14 +80,11 @@ body{
   .home-bar {
     font-size: 16px;
     color: black;
-    text-decoration: none; /* Removes default underline for links */
+    text-decoration: none;
   }
   
   .home-bar:hover {
-    color: rgb(0, 0, 0); /* Changes the color when the user hovers over the link */
-    text-decoration: none; /* Adds underline when the user hovers over the link */
-  }
-  
-  .home-bar:visited {
-    color: purple; /* Changes the color after the link has been visited */
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer; /* Adds a pointer cursor when hovering over the link */
   }
