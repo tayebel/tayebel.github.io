@@ -13,11 +13,11 @@ body {
   }
 
 .exp-title{
-    font-size: 20px;
+    font-size: 26px;
     
   }
 .exp-date{
-    font-size: 14px;
+    font-size: 16px;
   }
  #content {
     text-align: left;
@@ -63,8 +63,8 @@ body {
   }
   
   .cv-bar img {
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     margin-bottom: 10px;
   }
   
@@ -76,4 +76,7 @@ body {
   
   
   /* Adjust other styles as per your requirements */
-  
+  .home-bar{
+    font-size: 16px;
+    color: black;
+  }
