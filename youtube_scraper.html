@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
+  <link type="text/css" rel="stylesheet" href="static/css/experience.css">
+  <link rel="icon" href="/static/experiences/TM.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="text-container">
+        <img src="/static/experiences/dash.png" alt="Header Image" style="display: block; margin: 0 auto;">
+        <h5 class="exp-title">YouTube Channels Statistics Dashboard</h5>
+      </div>
+    </div>
+  </div>
+
+  <section id="content">
+    <h2>Table of Contents</h2>
+    <ul>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#installation">Installation</a></li>
+      <li><a href="#usage">Usage</a></li>
+      <li><a href="#search">Search</a></li>
+      <li><a href="#exporting-data">Exporting Data</a></li>
+      <li><a href="#contributing">Contributing</a></li>
+    </ul>
+  </section>
+
+  <section id="introduction">
+    <h2>Introduction</h2>
+    <p>
+      The YouTube scraper is a simple Python tool that generates an interactive dashboard using the Plotly library.
+      It allows users to visualize various (Views, Total videos, and Number subscribers) statistics of YouTube channels
+      based on the inputs (keywords, username...) provided by the user. The dashboard provides a comprehensive overview
+      of the channel's performance and allows users to save the results as an Excel spreadsheet.
+    </p>
+  </section>
+
+  <section id="installation">
+    <h2>Installation</h2>
+    <pre>
+      <code>
+      git clone https://github.com/tayebel/youtube_scraper.git
+      cd youtube_scraper
+      pip install -r requirements.txt
+      </code>
+    </pre>
+  </section>
+
+  <section id="usage">
+    <h2>Usage</h2>
+    <p>
+      Run the Python script:
+      <pre><code>python run.py</code></pre>
+    </p>
+    <img src="/static/experiences/dash.png" alt="Header Image" style="display: block; margin: 0 auto;">
+    <p>
+      Enter your YouTube Data API key.<br>
+      Open your web browser and visit <a href="http://localhost:8052" target="_blank">http://localhost:8052</a> to
+      access the dashboard.
+    </p>
+    <p>
+      <strong>NOTE:</strong> Before running the tool, make sure to get your YouTube Data API key. You can obtain one by
+      following the instructions
+      <a href="https://developers.google.com/youtube/registering_an_application" target="_blank">here</a>.
+    </p>
+  </section>
+
+  <section id="search">
+    <h2>Search</h2>
+    <p>
+      To search for YouTube channels, follow these steps:
+    </p>
+    <ol>
+      <li>Enter one or more inputs in the search bar provided.</li>
+      <li>Click the "Search" button to initiate the search.</li>
+      <li>The tool will retrieve the search results from YouTube and display them on the dashboard.</li>
+      <li>You can also increase the number of results using maximumResults.</li>
+    </ol>
+  </section>
+  <img src="/static/experiences/dash2.png" alt="Header Image" style="display: block; margin: 0 auto;">
+  <section id="exporting-data">
+    <h2>Exporting Data</h2>
+    <p>
+      To export the displayed statistics as an Excel spreadsheet, click the "Save Excel Sheet" button located at the
+      top-left corner of the dashboard.
+    </p>
+  </section>
+  <img src="/static/experiences/dash1.png" alt="Header Image" style="display: block; margin: 0 auto;">
+  <section id="contributing">
+    <h2>Contributing</h2>
+    <p>
+      Contributions to the YouTube Channel Statistics Dashboard are welcome! If you find any bugs or have suggestions
+      for improvements, please open an issue on the GitHub repository. If you would like to contribute code, feel free
+      to contact me.
+    </p>
+  </section>
+
+  <section>
+    <div class="home-bar">
+      <a href="/" target="_blank">
+        Back to Home
+      </a>
+    </div>
+  </section>
+
+  <section id="cv">
+    <div class="container-cv">
+      <div class="cv-bar">
+        <a href="/static/experiences/cv-tayeb.pdf" target="_blank">
+          <img src="/static/experiences/cv.svg" alt="CV Icon">
+        </a>
+      </div>
+      <div class="link-bar">
+        <a href="https://www.linkedin.com/in/tayebelmehadji/" target="_blank">
+          <img src="static/images/linkedin-logo copy.svg" alt="CV Icon">
+        </a>
+      </div>
+    </div>
+    <h5 class="rights">&copy; 2023 Tayeb EL Mehadji</h5>
+  </section>
+</body>
+
+</html>
