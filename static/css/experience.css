@@ -158,6 +158,45 @@ body{
     
   }
   
+  .code-container {
+    position: relative;
+  }
+  
+  .copy-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .copy-button {
+    background-color: transparent;
+    border: none;
+    color: #0366d6;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  .copy-button:hover {
+    color: #1c64f2;
+  }
+  
+  .copy-notification {
+    background-color: #f6f8fa;
+    border-radius: 3px;
+    color: #586069;
+    font-size: 12px;
+    margin-top: 5px;
+    opacity: 0;
+    padding: 5px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .copy-container:hover .copy-notification {
+    opacity: 1;
+  }
+  
   .code {
     background-color: #f6f8fa;
     border-radius: 3px;
