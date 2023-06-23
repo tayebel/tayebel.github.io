@@ -158,4 +158,31 @@ body{
     
   }
   
+  .code {
+    position: relative;
+    padding: 1em;
+    background-color: #f6f8fa;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  .copy-notification {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    background-color: #28a745;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: none;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
   
