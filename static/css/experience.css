@@ -101,6 +101,7 @@ body{
   }
   
   .container-cv {
+    background-color: #ffffff;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -109,12 +110,14 @@ body{
   }
   
   .cv-bar {
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
   .cv-bar img {
+    background-color: #ffffff;
     height: 35px;
     width: 35px;
     margin-bottom: 7px;
@@ -122,6 +125,7 @@ body{
   
   }
   .link-bar img {
+    background-color: #ffffff;
     height: 48px;
     width: 45px;
     margin-bottom: 7px;
