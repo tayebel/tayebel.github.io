@@ -158,31 +158,38 @@ body{
     
   }
   
-  .code {
+  .code-container {
     position: relative;
-    padding: 1em;
+  }
+  
+  .copy-container {
+    position: absolute;
+    top: 0;
+    right: 0;
     background-color: #f6f8fa;
-    border: 1px solid #d1d5da;
-    border-radius: 6px;
-    font-size: 14px;
-    line-height: 1.5;
-    white-space: pre-wrap;
-    word-wrap: break-word;
+    padding: 5px;
+  }
+  
+  .copy-button {
+    background-color: #f6f8fa;
+    border: none;
+    cursor: pointer;
   }
   
   .copy-notification {
     position: absolute;
-    top: -30px;
+    top: -20px;
     right: 0;
-    background-color: #28a745;
+    background-color: #6a737d;
     color: #fff;
     padding: 5px 10px;
     border-radius: 4px;
-    font-size: 14px;
-    display: none;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
   
-  button {
-    margin-top: 10px;
+  .copy-button:hover + .copy-notification {
+    opacity: 1;
   }
   

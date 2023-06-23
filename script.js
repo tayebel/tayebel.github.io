@@ -1,23 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var codeBlocks = document.querySelectorAll('pre');
-
-  codeBlocks.forEach(function(block) {
-    var copyButton = document.createElement('button');
-    copyButton.className = 'copy-button';
-    copyButton.textContent = 'Copy';
-
-    block.parentNode.insertBefore(copyButton, block);
-  });
-
-  var clipboard = new ClipboardJS('.copy-button', {
-    target: function(trigger) {
-      return trigger.nextElementSibling;
-    }
-  });
+  var clipboard = new ClipboardJS('.copy-button');
 
   clipboard.on('success', function(e) {
+    showCopyNotification(e.trigger.nextElementSibling);
     e.clearSelection();
-    showCopyNotification(e.trigger);
   });
 
   clipboard.on('error', function(e) {
@@ -25,13 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-function showCopyNotification(button) {
-  var notification = document.createElement('span');
-  notification.className = 'copy-notification';
-  notification.textContent = 'Copied!';
-  button.parentNode.insertBefore(notification, button);
+function showCopyNotification(notification) {
+  notification.style.opacity = 1;
 
   setTimeout(function() {
-    button.parentNode.removeChild(notification);
+    notification.style.opacity = 0;
   }, 2000);
 }
