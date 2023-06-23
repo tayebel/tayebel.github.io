@@ -244,19 +244,24 @@ body {
 
 .cv-bar {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
 .cv-bar img {
+  height: 35px;
+  width: 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+}
+.link-bar img {
   height: 45px;
   width: 45px;
   margin-bottom: 10px;
   cursor: pointer;
 
 }
-
 .rights {
   font-size: 12px;
   white-space: nowrap;
