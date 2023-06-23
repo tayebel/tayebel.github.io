@@ -1,20 +1,14 @@
-document.addEventListener('DOMContentLoaded', function() {
-  var clipboard = new ClipboardJS('.copy-button');
+function copyCode() {
+  const codeElement = document.querySelector('.code code');
+  const range = document.createRange();
+  range.selectNode(codeElement);
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(range);
+  document.execCommand('copy');
 
-  clipboard.on('success', function(e) {
-    showCopyNotification(e.trigger.nextElementSibling);
-    e.clearSelection();
-  });
-
-  clipboard.on('error', function(e) {
-    console.error('Failed to copy code: ', e);
-  });
-});
-
-function showCopyNotification(notification) {
-  notification.style.opacity = 1;
-
+  const copyNotification = document.getElementById('copyNotification');
+  copyNotification.style.display = 'inline-block';
   setTimeout(function() {
-    notification.style.opacity = 0;
+    copyNotification.style.display = 'none';
   }, 2000);
 }
