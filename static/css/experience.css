@@ -94,13 +94,15 @@ body{
   
   
   #cv {
+    flex-direction: column;
     background-color: #ffffff;
     padding: 20px;
+    
   }
   
   .container-cv {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     min-height: 10vh;
@@ -108,18 +110,24 @@ body{
   
   .cv-bar {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   
   .cv-bar img {
-    height: 45px;
-    width: 45px;
-    margin-bottom: 10px;
+    height: 25px;
+    width: 23px;
+    margin-bottom: 7px;
     cursor: pointer;
-  }
   
+  }
+  .link-bar img {
+    height: 48px;
+    width: 45px;
+    margin-bottom: 7px;
+    cursor: pointer;
+  
+  }
   .rights {
     font-size: 12px;
     white-space: nowrap;
