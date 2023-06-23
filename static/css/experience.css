@@ -19,6 +19,14 @@ body{
 .exp-date{
     font-size: 16px;
   }
+.container{
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    color: rgb(10, 10, 10); 
+
+}
  #content {
     
     text-align: left;
