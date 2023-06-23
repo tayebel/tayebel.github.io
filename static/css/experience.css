@@ -12,7 +12,9 @@ body{
   header {
     text-align: center;
   }
-
+.exp{
+  font-size: 20px;
+}
 .exp-title{
     font-size: 26px;
     
