@@ -1,23 +1,37 @@
-function copyCode() {
-    var code = document.getElementById("code").textContent;
-    navigator.clipboard.writeText(code)
-      .then(function() {
-        showCopyNotification();
-      })
-      .catch(function(error) {
-        console.error("Failed to copy code: ", error);
-      });
-  }
-  
-  function showCopyNotification() {
-    var notification = document.createElement("div");
-    notification.classList.add("copy-notification");
-    notification.textContent = "Code copied!";
-    document.body.appendChild(notification);
-  
-    setTimeout(function() {
-      notification.style.display = "none";
-      document.body.removeChild(notification);
-    }, 2000);
-  }
-  
+document.addEventListener('DOMContentLoaded', function() {
+  var codeBlocks = document.querySelectorAll('pre');
+
+  codeBlocks.forEach(function(block) {
+    var copyButton = document.createElement('button');
+    copyButton.className = 'copy-button';
+    copyButton.textContent = 'Copy';
+
+    block.parentNode.insertBefore(copyButton, block);
+  });
+
+  var clipboard = new ClipboardJS('.copy-button', {
+    target: function(trigger) {
+      return trigger.nextElementSibling;
+    }
+  });
+
+  clipboard.on('success', function(e) {
+    e.clearSelection();
+    showCopyNotification(e.trigger);
+  });
+
+  clipboard.on('error', function(e) {
+    console.error('Failed to copy code: ', e);
+  });
+});
+
+function showCopyNotification(button) {
+  var notification = document.createElement('span');
+  notification.className = 'copy-notification';
+  notification.textContent = 'Copied!';
+  button.parentNode.insertBefore(notification, button);
+
+  setTimeout(function() {
+    button.parentNode.removeChild(notification);
+  }, 2000);
+}
