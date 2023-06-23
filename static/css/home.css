@@ -230,12 +230,12 @@ body {
 #cv {
   background-color: #ffffff;
   padding: 20px;
-  flex-direction: column;
+  
 }
 
 .container-cv {
   display: flex;
-  
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 10vh;
