@@ -21,21 +21,14 @@ function showCopyNotification() {
   }, 1500);
 }
 
-// Initialize clipboard.js
-const clipboard = new ClipboardJS('.copy-button', {
-  text: function (trigger) {
-    const codeElement = trigger.closest('.code-container').querySelector('code');
-    return codeElement.innerText;
-  }
-});
-
-// Handle copy success
-clipboard.on('success', function (e) {
-  showCopyNotification();
-  e.clearSelection();
-});
-
-// Handle copy error
-clipboard.on('error', function (e) {
-  console.error('Failed to copy code: ', e.action);
+// Add copy button functionality
+document.addEventListener('DOMContentLoaded', () => {
+  const codeContainers = document.querySelectorAll('.code-container');
+  codeContainers.forEach((container) => {
+    const copyButton = document.createElement('button');
+    copyButton.classList.add('copy-button');
+    copyButton.innerHTML = '<i class="fas fa-copy"></i>';
+    copyButton.addEventListener('click', copyCode);
+    container.querySelector('.code-header').appendChild(copyButton);
+  });
 });
