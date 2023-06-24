@@ -181,6 +181,7 @@ body{
 
 .code { 
   border: black;
+  background-color: #ffffff;
 }
 .copy-button {
   position: absolute;
@@ -196,4 +197,5 @@ body{
 }
 .command{
   color: red;
+  
 }
