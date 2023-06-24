@@ -180,15 +180,12 @@ body{
   color: white;
   padding: 10px;
   max-width: 600px; /* Adjust the width as desired */
-  max-height:50px;
-  
-
+  max-height: 200px; /* Adjust the maximum height as desired */
+  overflow-y: auto;
 }
 
-
-
 .code {
-  
+  margin: 0;
   color: white;
 }
 
