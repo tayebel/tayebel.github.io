@@ -40,34 +40,18 @@
       </code></pre>
     </div>
   
-    <script>
-      function copyCode() {
-        const codeElement = document.querySelector('.code code');
-        const codeText = codeElement.innerText.trim();
-  
-        const tempInput = document.createElement('textarea');
-        tempInput.value = codeText;
-        document.body.appendChild(tempInput);
-        tempInput.select();
-        document.execCommand('copy');
-        document.body.removeChild(tempInput);
-  
-        const copyNotification = document.getElementById('copyNotification');
-        copyNotification.style.display = 'inline-block';
-        setTimeout(function() {
-          copyNotification.style.display = 'none';
-        }, 2000);
-      }
-    </script>
+    <script src="script.js"></script>
   </section>
   <section id="content">
     <h5 class="exp">Usage</h5>
     <p>
       Run the Python script:
       <pre class="code"><code>
+        <button class="copy-button" onclick="copyCode()">Copy</button>
         <span class="command">python</span> run.py
       </code>
     </pre>
+    <script src="script.js"></script>
     </p>
     <p>
       <img src="/static/experiences/run.png" alt="Header Image" style="display: block; margin: 0 auto;"><br>

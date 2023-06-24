@@ -1,20 +1,17 @@
-$(document).ready(function () {
-  new ClipboardJS('.copy-button', {
-    text: function (trigger) {
-      var codeElement = $(trigger)
-        .closest('.code-container')
-        .find('code');
-      return codeElement.text();
-    }
-  });
+function copyCode() {
+  const codeElement = document.querySelector('.code code');
+  const codeText = codeElement.innerText.trim();
 
-  $('.copy-button').on('click', function () {
-    var copyNotification = $(this)
-      .closest('.code-container')
-      .find('.copy-notification');
-    copyNotification.addClass('show');
-    setTimeout(function () {
-      copyNotification.removeClass('show');
-    }, 1500);
-  });
-});
+  const tempInput = document.createElement('textarea');
+  tempInput.value = codeText;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+
+  const copyNotification = document.getElementById('copyNotification');
+  copyNotification.style.display = 'inline-block';
+  setTimeout(function() {
+    copyNotification.style.display = 'none';
+  }, 2000);
+}
