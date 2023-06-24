@@ -177,12 +177,15 @@ body{
 .code-container {
   position: relative;
   display: inline-block;
+  background-color: rgb(13, 13, 13);
 }
 
 .code { 
   border: black;
   padding: 5px;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #545353;
+  border-width: 300px;
 }
 .copy-button {
   position: absolute;
