@@ -180,7 +180,7 @@ body{
   padding: 10px;
   font-family: monospace;
   max-width: 600px; /* Adjust the width as desired */
-  max-height: fit-content;
+  max-height:100px;
   position: relative;
   overflow-x: auto;
   white-space: pre-wrap;
