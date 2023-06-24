@@ -165,10 +165,12 @@ body{
   
   .code-container {
     position: relative;
+    background-color: #b0b0b0;
   }
   
   .copy-container {
     position: absolute;
+    background-color: #b0b0b0;
     top: 0;
     right: 0;
   }
