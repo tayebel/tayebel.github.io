@@ -179,8 +179,8 @@ body{
   color: white;
   padding: 10px;
   font-family: monospace;
-  display: inline-block;
   max-width: 600px; /* Adjust the width as desired */
+  max-height: fit-content;
   position: relative;
   overflow-x: auto;
   white-space: pre-wrap;
