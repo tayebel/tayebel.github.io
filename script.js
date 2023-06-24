@@ -1,14 +1,14 @@
 function copyCode() {
   const codeElement = document.querySelector('.code code');
-  const range = document.createRange();
-  range.selectNode(codeElement);
-  window.getSelection().removeAllRanges();
-  window.getSelection().addRange(range);
-  document.execCommand('copy');
+  const codeText = codeElement.innerText;
 
-  const copyNotification = document.getElementById('copyNotification');
-  copyNotification.style.display = 'inline-block';
-  setTimeout(function() {
-    copyNotification.style.display = 'none';
-  }, 2000);
+  navigator.clipboard.writeText(codeText).then(function() {
+    const copyNotification = document.getElementById('copyNotification');
+    copyNotification.style.display = 'inline-block';
+    setTimeout(function() {
+      copyNotification.style.display = 'none';
+    }, 2000);
+  }).catch(function(error) {
+    console.error('Failed to copy code: ', error);
+  });
 }
