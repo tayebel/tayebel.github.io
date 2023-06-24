@@ -1,11 +1,11 @@
 // Copy code function
-function copyCode() {
-  const codeElement = document.querySelector('.code code');
+function copyCode(event) {
+  const codeElement = event.target.parentNode.parentNode.querySelector('.code code');
   const code = codeElement.innerText;
 
   navigator.clipboard.writeText(code)
     .then(() => {
-      showCopyNotification();
+      showCopyNotification(event.target);
     })
     .catch((error) => {
       console.error('Failed to copy code: ', error);
@@ -13,9 +13,9 @@ function copyCode() {
 }
 
 // Show copy notification
-function showCopyNotification() {
-  const copyNotification = document.getElementById('copyNotification');
-  copyNotification.style.display = 'block';
+function showCopyNotification(button) {
+  const copyNotification = button.parentNode.querySelector('.copy-notification');
+  copyNotification.style.display = 'inline-block';
   setTimeout(() => {
     copyNotification.style.display = 'none';
   }, 1500);
@@ -23,12 +23,8 @@ function showCopyNotification() {
 
 // Add copy button functionality
 document.addEventListener('DOMContentLoaded', () => {
-  const codeContainers = document.querySelectorAll('.code-container');
-  codeContainers.forEach((container) => {
-    const copyButton = document.createElement('button');
-    copyButton.classList.add('copy-button');
-    copyButton.innerHTML = '<i class="fas fa-copy"></i>';
-    copyButton.addEventListener('click', copyCode);
-    container.querySelector('.code-header').appendChild(copyButton);
+  const copyButtons = document.querySelectorAll('.copy-button');
+  copyButtons.forEach((button) => {
+    button.addEventListener('click', copyCode);
   });
 });
