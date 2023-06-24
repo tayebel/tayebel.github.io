@@ -47,25 +47,9 @@
       <button class="copy-button" onclick="copyCode()"><i class="fas fa-copy"></i></button>
       <div id="copyNotification">Copied!</div>
     </div>
-    <script>
-      function copyCode() {
-        const codeElement = document.querySelector('.code code');
-        const codeText = codeElement.innerText.trim();
   
-        const tempInput = document.createElement('textarea');
-        tempInput.value = codeText;
-        document.body.appendChild(tempInput);
-        tempInput.select();
-        document.execCommand('copy');
-        document.body.removeChild(tempInput);
-  
-        const copyNotification = document.getElementById('copyNotification');
-        copyNotification.style.display = 'inline-block';
-        setTimeout(function() {
-          copyNotification.style.display = 'none';
-        }, 2000);
-      }
-    </script>
+    <script src="script.js"></script>
+    
 
     
   </section>
