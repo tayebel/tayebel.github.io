@@ -1,30 +1,20 @@
-// Copy code function
-function copyCode(event) {
-  const codeElement = event.target.parentNode.parentNode.querySelector('.code code');
-  const code = codeElement.innerText;
+$(document).ready(function () {
+  new ClipboardJS('.copy-button', {
+    text: function (trigger) {
+      var codeElement = $(trigger)
+        .closest('.code-container')
+        .find('code');
+      return codeElement.text();
+    }
+  });
 
-  navigator.clipboard.writeText(code)
-    .then(() => {
-      showCopyNotification(event.target);
-    })
-    .catch((error) => {
-      console.error('Failed to copy code: ', error);
-    });
-}
-
-// Show copy notification
-function showCopyNotification(button) {
-  const copyNotification = button.parentNode.querySelector('.copy-notification');
-  copyNotification.style.display = 'inline-block';
-  setTimeout(() => {
-    copyNotification.style.display = 'none';
-  }, 1500);
-}
-
-// Add copy button functionality
-document.addEventListener('DOMContentLoaded', () => {
-  const copyButtons = document.querySelectorAll('.copy-button');
-  copyButtons.forEach((button) => {
-    button.addEventListener('click', copyCode);
+  $('.copy-button').on('click', function () {
+    var copyNotification = $(this)
+      .closest('.code-container')
+      .find('.copy-notification');
+    copyNotification.addClass('show');
+    setTimeout(function () {
+      copyNotification.removeClass('show');
+    }, 1500);
   });
 });
