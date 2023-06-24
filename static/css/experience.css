@@ -180,7 +180,7 @@ body{
   color: white;
   padding: 10px;
   max-width: 600px; /* Adjust the width as desired */
-  max-height: 50px; /* Adjust the maximum height as desired */
+  max-height: 100px; /* Adjust the maximum height as desired */
   overflow-y: auto;
 }
 
