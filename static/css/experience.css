@@ -178,6 +178,7 @@ body{
   position: relative;
   display: inline-block;
   background-color: rgb(13, 13, 13);
+  border: solid;
 }
 
 .code { 
