@@ -179,7 +179,6 @@ body{
   color: white;
   padding: 10px;
   font-family: monospace;
-  height: auto;
   max-width: 600px; /* Adjust the width as desired */
   position: relative;
   overflow-x: auto;
