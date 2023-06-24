@@ -178,12 +178,10 @@ body{
   background-color: black;
   color: white;
   padding: 10px;
-  font-family: monospace;
   max-width: 600px; /* Adjust the width as desired */
   max-height:100px;
-  position: relative;
-  overflow-x: auto;
-  white-space: pre-wrap;
+  
+
 }
 
 .copy-button {
@@ -198,7 +196,7 @@ body{
 }
 
 .code {
-  margin: 0;
+  
   color: white;
 }
 
