@@ -166,14 +166,11 @@ body{
   @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
   #contentx {
-  text-align: left;
-  margin: 0 auto;
-  max-width: 600px;
-  padding: 20px;
-  font-family: 'Fira Code', monospace;
-  margin: 0;
-  padding: 20px;
-  background-color: #f5f5f5;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    color: rgb(10, 10, 10);
 }
 
 .code-container {
