@@ -184,14 +184,21 @@ body{
   overflow-x: auto;
   max-height: none;
   max-width: 600px; /* Adjust the width as desired */
+  position: relative;
+}
+
+.copy-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 .code {
   margin: 0;
   white-space: pre;
-}
-
-.command{
-  color: red;
-  
 }
