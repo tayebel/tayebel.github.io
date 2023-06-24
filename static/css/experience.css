@@ -180,17 +180,18 @@ body{
   background-color: black;
   color: white;
   padding: 10px;
-  overflow-x: auto;
-  max-height: auto;
+  font-family: monospace;
+  height: auto;
   max-width: 600px; /* Adjust the width as desired */
+  position: relative;
+  overflow-x: auto;
+  white-space: pre-wrap;
 }
 
 .copy-button {
   position: absolute;
   top: 5px;
   right: 5px;
-  margin-top: 10px;
-  margin-bottom: 10px;
   background-color: #222;
   color: white;
   border: none;
@@ -200,5 +201,9 @@ body{
 
 .code {
   margin: 0;
-  white-space: pre;
+  color: white;
+}
+
+.command {
+  color: red;
 }
