@@ -174,15 +174,10 @@ body{
 }
 
 /* Code container */
-.code-container {
-  position: relative;
-  display: inline-block;
-  background-color: rgb(13, 13, 13);
-  border: solid;
-}
+
 
 .code { 
-  border: black;
+  border: solid;
   padding: 5px;
   color: #ffffff;
   background-color: #000000;
