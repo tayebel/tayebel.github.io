@@ -185,16 +185,7 @@ body{
 
 }
 
-.copy-button {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  background-color: #222;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-}
+
 
 .code {
   
