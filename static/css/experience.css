@@ -163,11 +163,6 @@ body{
     
   }
   
-  .code-container {
-    position: relative;
-    display: inline-block;
-  }
-
   .copy-button {
     position: absolute;
     top: 0;
