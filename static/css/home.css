@@ -271,27 +271,199 @@ body {
 
 
 @media only screen and (max-device-width: 480px) {
-  body { max-width: 100%; }
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  
+  
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .text-container {
+    flex-grow: 1;
+    text-align: right;
+    margin-right: 50px;
+  }
+  
   .social-icons {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin-left: 20px;
   }
-  .text{
-    white-space: normal;
-    font-size: 12px;
+  
+  .middle-text {
+    text-align: left;
   }
-
+  
+  .top-text {
+    margin-bottom: 10px;
+  }
+  
+  .top-text p {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .text-content {
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .title-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .title-logo:hover {
+    transform: scale(1.2);
+  }
+  
   .dynamic-word {
     font-weight: bold;
-    font-size: 14px;
-    padding: 3px;
+    font-size: 20px;
+    padding: 4px;
     background-color: #5acbf0;
     color: #f5f5f5;
-    border-radius: 3px;
+    border-radius: 4px;
     animation: textFade 3s infinite;
   }
+  
+  .card{
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  
+  @keyframes textFade {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes arrowBounce {
+    0% {
+      transform: rotate(45deg) translateY(0);
+    }
+    50% {
+      transform: rotate(45deg) translateY(10px);
+    }
+    100% {
+      transform: rotate(45deg) translateY(0);
+    }
+  }
+  
+  #services {
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  #services h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #services p {
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  
+  #projects {
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  #projects p {
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  
+  #projects h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .row {
+    margin-top: 20px;
+  }
+  
+  .tags {
+    display: inline-block;
+  }
+  
+  .tags span {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 10px; 
+    background-color: #41a1c1;
+    color: #ffffff;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+  
+  .card-title {
+    font-size: 19px; /* Adjust the font size as needed */
+  }
+  
+  .card-date {
+    font-size: 14px; /* Adjust the font size as needed */
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    height: 650px; /* Set a fixed height for the cards */
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    height: 300px; /* Set a fixed height for the card images */
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  /* CSS for the CV bar */
+  
   .scroll-down-arrow {
     display: flex;
     justify-content: center;
@@ -314,6 +486,60 @@ body {
   
   .scroll-down-arrow.hidden {
     opacity: 0;
+  }
+  
+  #personal {
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  #personal h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #cv {
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+    
+  }
+  
+  .container-cv {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+  }
+  
+  .cv-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cv-bar img {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 7px;
+    cursor: pointer;
+  
+  }
+  .link-bar img {
+    height: 48px;
+    width: 45px;
+    margin-bottom: 7px;
+    cursor: pointer;
+  
+  }
+  .rights {
+    font-size: 12px;
+    white-space: nowrap;
+    text-align: center; /* Center the text */
   }
 }
 
@@ -365,26 +591,199 @@ body {
 
 
 @media only screen and (min-resolution: 300dpi) {
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  
+  
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .text-container {
+    flex-grow: 1;
+    text-align: right;
+    margin-right: 50px;
+  }
+  
   .social-icons {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin-left: 20px;
   }
-  .text{
-    white-space: normal;
-    font-size: 12px;
+  
+  .middle-text {
+    text-align: left;
   }
-
+  
+  .top-text {
+    margin-bottom: 10px;
+  }
+  
+  .top-text p {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .text-content {
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .title-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .title-logo:hover {
+    transform: scale(1.2);
+  }
+  
   .dynamic-word {
     font-weight: bold;
-    font-size: 14px;
-    padding: 3px;
+    font-size: 20px;
+    padding: 4px;
     background-color: #5acbf0;
     color: #f5f5f5;
-    border-radius: 3px;
+    border-radius: 4px;
     animation: textFade 3s infinite;
   }
+  
+  .card{
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  
+  @keyframes textFade {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes arrowBounce {
+    0% {
+      transform: rotate(45deg) translateY(0);
+    }
+    50% {
+      transform: rotate(45deg) translateY(10px);
+    }
+    100% {
+      transform: rotate(45deg) translateY(0);
+    }
+  }
+  
+  #services {
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  #services h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #services p {
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  
+  #projects {
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  #projects p {
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  
+  #projects h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .row {
+    margin-top: 20px;
+  }
+  
+  .tags {
+    display: inline-block;
+  }
+  
+  .tags span {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 10px; 
+    background-color: #41a1c1;
+    color: #ffffff;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+  
+  .card-title {
+    font-size: 19px; /* Adjust the font size as needed */
+  }
+  
+  .card-date {
+    font-size: 14px; /* Adjust the font size as needed */
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    height: 650px; /* Set a fixed height for the cards */
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    height: 300px; /* Set a fixed height for the card images */
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  /* CSS for the CV bar */
+  
   .scroll-down-arrow {
     display: flex;
     justify-content: center;
@@ -407,6 +806,60 @@ body {
   
   .scroll-down-arrow.hidden {
     opacity: 0;
+  }
+  
+  #personal {
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  #personal h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #cv {
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+    
+  }
+  
+  .container-cv {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+  }
+  
+  .cv-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cv-bar img {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 7px;
+    cursor: pointer;
+  
+  }
+  .link-bar img {
+    height: 48px;
+    width: 45px;
+    margin-bottom: 7px;
+    cursor: pointer;
+  
+  }
+  .rights {
+    font-size: 12px;
+    white-space: nowrap;
+    text-align: center; /* Center the text */
   }
 }
 
